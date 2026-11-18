@@ -1,178 +1,41 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="bkQPxoNcZ5F8ojZFFIuhTwXyhfmvZ0Q7l9K8ltjmh2Y" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    /* 顶部宣传图 */
-    .promo-banner {
-      width: 100%;
-      height: auto;
-      max-height: 400px;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* App 信息容器 */
-    .app-section {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    /* 左侧文字部分 */
-    .app-info {
-      flex: 1;
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-    }
-
-    .app-icon {
-      width: 80px;
-      height: 80px;
-      border-radius: 16px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      flex-shrink: 0;
-    }
-
-    .app-text h2 {
-      margin: 0 0 10px;
-      font-size: 1.5rem;
-    }
-
-    .app-text p {
-      margin: 0;
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.5;
-    }
-
-    /* 右侧宣传图 */
-    .app-promo {
-      flex: 1;
-      text-align: center;
-    }
-
-    .app-promo img {
-      width: 300px;   /* 固定宽度 */
-      max-width: 100%; /* 不超过容器 */
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    /* 手机端优化 */
-    @media (max-width: 768px) {
-      .app-section {
-        flex-direction: column;
-        text-align: center;
-      }
-      .app-info {
-        justify-content: center;
-      }
-      .app-text h2 {
-        font-size: 1.2rem;
-      }
-      .app-text p {
-        font-size: 0.95rem;
-      }
-      .app-promo img {
-        width: 100%; /* 手机端铺满 */
-      }
-    }
-
-    /* 反馈区域 */
-    .feedback-section {
-      max-width: 1100px;
-      margin: 0 auto 40px;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .feedback-title {
-      margin: 0 0 10px;
-      font-size: 1.25rem;
-    }
-
-    .feedback-text {
-      margin: 0 0 16px;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .contact-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 14px;
-      border-radius: 10px;
-      background: #111827;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      letter-spacing: 0.2px;
-    }
-
-    .contact-button:hover {
-      background: #0b1220;
-    }
-
-    .contact-email {
-      margin: 10px 0 0;
-      color: #6b7280;
-      font-size: 0.95rem;
-      word-break: break-all;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="Be-LsYuT0Gef8LUkwfYrZEPvfnIsDDlczBFz_mnEZ1U">
+  <meta name="description" content="Nexyron creates useful digital tools and playful casual games for everyday life.">
+  <meta name="theme-color" content="#0b1530">
+  <title>Nexyron — Digital Products for Everyday Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- 顶部宣传图 -->
-  <img src="images/pic.jpg" alt="宣传图" class="promo-banner">
-
-  <!-- App 1 -->
-  <div class="app-section">
-    <div class="app-info">
-      <img src="images/logo.png" alt="App1图标" class="app-icon">
-      <div class="app-text">
-        <h2>WalkRush</h2>
-        <p>Turn everyday steps into small wins and a rhythm you’ll enjoy.</p>
-      </div>
-    </div>
-    <div class="app-promo">
-      <img src="images/info.png" alt="App1宣传图">
-    </div>
-  </div>
-
-  <!-- 反馈区域 -->
-  <div class="feedback-section" aria-label="反馈与联系">
-    <h3 class="feedback-title">Feedback</h3>
-    <p class="feedback-text">
-      If you run into any issues or have suggestions, feel free to reach out. We’ll get back to you as soon as possible.
-    </p>
-    <a class="contact-button" href="mailto:JoelWyatt6697@icloud.com?subject=Website%20Feedback">
-      Contact us
-    </a>
-    <p class="contact-email">Email: JoelWyatt6697@icloud.com</p>
-  </div>
-
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Nexyron home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Nexyron</span></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="#focus">What we do</a><a href="#approach">Our approach</a><a href="about.html">About</a><a href="careers.html">Careers</a><a class="nav-contact" href="mailto:vytrtdhv3@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="main">
+    <section class="hero"><div class="container hero-grid"><div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-line"></span> DIGITAL PRODUCTS FOR EVERYDAY LIFE</p>
+      <h1>Good ideas.<br><em>Better everyday.</em></h1>
+      <p class="hero-desc">Nexyron creates useful tools and playful experiences for people around the world. We turn everyday needs into digital products that feel simple, thoughtful, and enjoyable to use.</p>
+      <div class="hero-actions"><a class="button button-light" href="#focus">Explore what we do <span aria-hidden="true">↗</span></a><a class="text-link text-link-light" href="about.html">Meet Nexyron <span aria-hidden="true">→</span></a></div>
+    </div><div class="hero-art"><img src="images/nexyron-hero.jpg" alt="Glowing connections flowing around a glass globe" fetchpriority="high"><div class="hero-art-label"><span class="pulse-dot"></span> IDEAS IN MOTION <span>01 / 02</span></div></div></div><div class="container hero-bottom"><span>SCROLL TO EXPLORE</span><span class="hero-bottom-line"></span><span>TOOLS · GAMES · EXPERIENCE</span></div></section>
+    <section class="intro-band" aria-label="Our perspective"><div class="container intro-band-inner"><p>It starts with an idea.<br><strong>It grows through care.</strong></p><span>We connect curiosity with practical thinking and keep refining the details that matter.</span></div></section>
+    <section class="section focus-section" id="focus"><div class="container"><div class="section-heading"><div><p class="section-kicker">01 / WHAT WE DO</p><h2>Two directions.<br><span>One commitment.</span></h2></div><p>From tools that make things easier to games that make moments brighter, we build around real needs and clear experiences.</p></div><div class="focus-grid">
+      <article class="focus-card"><div class="focus-image"><img src="images/scope/nexyron-tools.jpg" alt="Translucent glass panels connected by glowing paths" loading="lazy"><span class="image-index">01</span></div><div class="focus-body"><p class="card-kicker">UTILITY APPS</p><h3>Useful by design</h3><p>Digital tools shaped around everyday tasks, with clarity and ease at the center of every interaction.</p><span class="card-arrow" aria-hidden="true">↗</span></div></article>
+      <article class="focus-card"><div class="focus-image"><img src="images/scope/nexyron-games.jpg" alt="Colorful marbles moving through a playful looping track" loading="lazy"><span class="image-index">02</span></div><div class="focus-body"><p class="card-kicker">CASUAL GAMES</p><h3>Play in the moment</h3><p>Approachable games with satisfying rhythm, inviting visuals, and room for a little discovery.</p><span class="card-arrow" aria-hidden="true">↗</span></div></article>
+    </div></div></section>
+    <section class="section approach-section" id="approach"><div class="container"><div class="section-heading approach-heading"><div><p class="section-kicker">02 / OUR APPROACH</p><h2>Thoughtful products<br><span>take thoughtful work.</span></h2></div><p>We start with the real situation, then make every product decision with the experience in mind.</p></div><div class="approach-grid"><div><span class="approach-number">01</span><h3>Find the need</h3><p>Notice the small frictions in everyday life and ask which ones are worth solving.</p></div><div><span class="approach-number">02</span><h3>Keep it clear</h3><p>Handle the complexity behind the scenes so the experience feels natural up front.</p></div><div><span class="approach-number">03</span><h3>Keep improving</h3><p>Listen, learn, and refine the details that make a meaningful difference.</p></div></div></div></section>
+    <section class="contact-section" id="contact"><div class="container contact-inner"><div><p class="section-kicker">LET'S CONNECT</p><h2>What could we<br>make next?</h2><p>For partnerships, ideas, or career conversations, we'd love to hear from you.</p></div><a class="contact-mail" href="mailto:vytrtdhv3@gmail.com">vytrtdhv3@gmail.com <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-main"><a class="brand" href="index.html" aria-label="Nexyron home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Nexyron</span></a><nav aria-label="Footer navigation"><a href="about.html">About</a><a href="careers.html">Careers</a><a href="mailto:vytrtdhv3@gmail.com">Contact</a></nav></div><div class="container footer-bottom"><span>© <span id="year"></span> Nexyron. All rights reserved.</span><span>Built for what comes next.</span></div></footer>
+  <script src="main.js?v=2"></script>
 </body>
 </html>
